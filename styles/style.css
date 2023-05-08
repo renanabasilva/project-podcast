@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+/* 
+    Color palette
+
+    color 0 - #FF6E5C
+    color 1 - #FFAEA4
+    color 2 - #FFC4BD
+    color 3 - #FFF1F1
+    color 4 - #FFF
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --font0: ;
+    --color0: #FF6E5C;
+    --color1: #FFAEA4;
+    --color2: #FFC4BD;
+    --color3: #FFF1F1;
+    --color4: #FFF;
+}
+
+body, html {
+    background-color: #FFF1F1;
+}
+
+header {
+    background-color: var(--color2);
+    padding: 10px 20px;
+}
+
+/* menu */
+
+.material-symbols-rounded {
+    color: white;
+    font-size: 3em;   
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.material-symbols-rounded:hover {
+    cursor: pointer;
+}
+
+#closemenu { 
+    visibility: hidden;   
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-right: 20px;    
+}
+
+nav {
+    visibility: hidden;
+}
+
+#menu {    
+    position: absolute;
+    z-index: 1;
+    width: 100%;    
+    text-align: center;
+    background-image: linear-gradient(var(--color1), var(--color3));
+    margin: -70px -20px;   
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu li {  
+    margin: 50px;
+}
+
+#menu a {
+    color: var(--color0);
+    text-decoration: none;
+    font-size: 2em;  
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* body */
+
+main {
+    background-image: linear-gradient(var(--color1), var(--color2));
+    border-bottom: 1px 1px black; 
+    height: 50vh;  
+}
+
+main > h1 {
+    color: white;
+}
+
+main svg {
+    display: block;
+}
+
+footer {
+    background-color: var(--color3);
+    
+}
