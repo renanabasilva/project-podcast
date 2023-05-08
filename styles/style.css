@@ -37,7 +37,7 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 10vh; */
 }
 
 header {
@@ -108,7 +108,7 @@ main {
     background-image: linear-gradient(var(--color1), var(--color2));
     flex: 1;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-bottom: -70px;
 }
 
@@ -195,12 +195,19 @@ main h1 {
     box-shadow: 1px 3px 4px rgba(185, 19, 19, 0.2);
 }
 
-main img {
-    position: absolute;
-    right: -200px;
-    top: -10px;
-    width: 100vw;
+.image {
+    width: 40vw;
+    overflow: hidden;
 }
+
+.image img {
+    /* position: absolute;
+    right: -200px;
+    top: -10px; */
+    width: 100%;
+}
+
+
 
 /* --- footer --- */
 
@@ -218,7 +225,7 @@ footer > svg {
 /* Social Media */
 
 .footer{
-    margin: -20px;
+    margin: -20px 0;
 }
 
 #social > li {
