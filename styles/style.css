@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Josefin+Sans:ital,wght@1,200;1,500&display=swap');
 
 /* 
     Color palette
@@ -16,20 +16,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font0);
 }
 
 :root {
-    --font0: ;
+
+    --font0: 'Hind', Arial, Helvetica, sans-serif;
+    --font1: 'Josefin Sans', Arial, Helvetica, sans-serif;
     --color0: #FF6E5C;
-    --color1: #FFAEA4;
-    --color2: #FFC4BD;
+    --color1: #FFBEB6;
+    --color2: #FFD8D4;
     --color3: #FFF1F1;
     --color4: #FFF;
 }
 
 body, html {
-    background-color: #FFF1F1;
+    background-color: #FFF1F1;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -42,7 +50,7 @@ header {
 .material-symbols-rounded {
     color: white;
     font-size: 3em;   
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 4px 4px rgba(185, 19, 19, 0.25);
 }
 
 .material-symbols-rounded:hover {
@@ -52,9 +60,9 @@ header {
 #closemenu { 
     visibility: hidden;   
     position: absolute;
-    z-index: 2;
-    right: 0;
-    margin-right: 20px;    
+    z-index: 10;
+    left: 0;
+    margin-left: 20px;  
 }
 
 nav {
@@ -63,15 +71,17 @@ nav {
 
 #menu {    
     position: absolute;
-    z-index: 1;
+    z-index: 9;
     width: 100%;    
-    text-align: center;
-    background-image: linear-gradient(var(--color1), var(--color3));
-    margin: -70px -20px;   
+    text-align: center;    
+    margin: -70px -20px; 
 }
 
 #menu ul{
     list-style: none;
+    padding: 50px 0;
+    padding-bottom: 30px;
+    background-image: linear-gradient(var(--color1), var(--color3));
 }
 
 #menu li {  
@@ -88,23 +98,152 @@ nav {
     text-decoration: underline;
 }
 
-/* body */
+#menu svg {
+    
+}
+
+/* --- body --- */
 
 main {
     background-image: linear-gradient(var(--color1), var(--color2));
-    border-bottom: 1px 1px black; 
-    height: 50vh;  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -70px;
 }
 
-main > h1 {
+main h1 {
+    display: none;
+}
+
+.content {
+    margin: 50px 25px;
+    width: 60%;
+    z-index: 5;
+}
+
+/* Title */
+
+.title {
+    margin-bottom: 30px ;
+    padding-left: 20px;
+}
+
+.title h2 {
     color: white;
+    font-size: 2.8em;
+    font-family: var(--font1);
+    letter-spacing: 0.1em; 
+    text-shadow: 0 4px 4px rgba(185, 19, 19, 0.25);
 }
 
-main svg {
+.title #smt {
+    font-weight: 300;
+}
+
+.title #ess {
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+/* Line */
+
+.line {    
+    height: 3px; /* espessura da linha */
+    background-color: var(--color4);
+    position: absolute;
+    left: 0;
+    margin: -10px auto;
+    width: 63%; /* % do tamanho da tela */
+}
+  
+.line::before {
+    content: "";
+    display: block;
+    width: 10px; /* tamanho da bolinha */
+    height: 10px;
+    border-radius: 50%; /* forma da bolinha */
+    background-color: var(--color4);
+    position: absolute;
+    right: -2px; /* metade do tamanho da bolinha, para alinhar com a linha */
+    top: calc(50% - 5px); /* metade do tamanho da bolinha, para alinhar com a linha */
+}
+
+/* subtitle */
+
+.content p {
+    color: var(--color0);
+    font-size: 1em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* buttoms */
+
+.buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    height: 50px;
+    width: 220px;
+    text-decoration: none;
+    color: var(--color4);
+    background-color: var(--color1);
+    border: 2px solid var(--color4);
+    border-radius: 50px;
+    box-shadow: 1px 3px 4px rgba(185, 19, 19, 0.2);
+}
+
+main img {
+    position: absolute;
+    right: -200px;
+    top: -10px;
+    width: 100vw;
+}
+
+/* --- footer --- */
+
+footer {
+    text-align: center;
+    background-color: var(--color3);
+}
+
+/* Wave */
+
+footer > svg {
     display: block;
 }
 
-footer {
-    background-color: var(--color3);
-    
+/* Social Media */
+
+.footer{
+    margin: -20px;
+}
+
+#social > li {
+    display: inline-block;
+    margin: 0 8px;       
+}
+
+#social > li img {    
+    width: auto;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.footer > p {
+    margin: 0px;
+    color: var(--color1);
+    font-size: 1.2em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+#made {
+    font-size: 1em;
 }
