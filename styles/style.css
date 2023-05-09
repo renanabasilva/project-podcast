@@ -67,10 +67,6 @@ header {
     margin: 13px 20px;  
 }
 
-nav {
-    /* visibility: hidden; */
-}
-
 #menu {
     position: fixed;
     top: -100%;
