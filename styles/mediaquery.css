@@ -45,7 +45,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     header {
         position: fixed;
@@ -61,7 +61,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
     #menu {
         position: auto;
         top: 0;
-        /* background-color: var(--color2); */
     }
 
     #menu ul {
@@ -132,7 +131,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 }
 
-/* @media screen and (min-width: 992px) {
+/* Dispositivos Grandes */
+@media screen and (min-width: 992px) {
 
     header {
         position: fixed;
@@ -173,12 +173,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     .content {
-        width: 80%;
+        width: 60%;
+        text-align: center;
     }
 
     .title {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 20px;        
     }
 
     .title h2 {        
@@ -191,33 +191,40 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
     .line { 
         width: 60vw;
-        max-width: 600px;
+        max-width: none;
     }
 
     .content p {
-        text-align: left;
-        margin-left: 30px;
+        margin: 0px auto;
+        margin-top: 60px;
+    }
+
+    .buttons {
+        display: flex;        
+        justify-content: center;
     }
 
     .button {
-        margin-left: 11vw;
+        width: 29vw;
+        margin: 40px 20px;
+        max-width: 350px;
     }
     
     .image img {
         left: 60%;
-        width: 35%;
-        max-width: 530px;
+        width: 30%;
+        max-width: 400px;
         margin-top: 50px;
+        top: 45%;
+        transform: translateY(-50%);
     }
 
-    footer > svg {
-        
-    }
 
     .footer {
         width: fit-content;
-        margin-top: -100px;
-        margin-left: 5vw;
+        margin-top: -120px;
+        margin-left: 10vw;
+        margin-bottom: 20px;
         text-align: center;
     }
-} */
+}
