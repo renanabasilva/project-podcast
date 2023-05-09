@@ -6,12 +6,24 @@
 //     }
 // }
 
+// function clickMenu() {
+//     if (menu.style.visibility == 'visible') {
+//         menu.style.visibility = 'hidden'
+//         closemenu.style.visibility = 'hidden'
+//     } else {
+//         menu.style.visibility = 'visible'
+//         closemenu.style.visibility = 'visible'
+//     }
+// }
+
+// const menuBtn = document.getElementById('burger');
+// const menu = document.getElementById('menu');
+
+// menuBtn.addEventListener('click', function() {
+//   menu.classList.toggle('open');
+// });
+
+const menu = document.getElementById('menu')
 function clickMenu() {
-    if (menu.style.visibility == 'visible') {
-        menu.style.visibility = 'hidden'
-        closemenu.style.visibility = 'hidden'
-    } else {
-        menu.style.visibility = 'visible'
-        closemenu.style.visibility = 'visible'
-    }
+    menu.classList.toggle('open');
 }
