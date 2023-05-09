@@ -153,10 +153,10 @@ header {
 
 main {
     background-image: linear-gradient(var(--color1), var(--color2));
-    height: 80vh;
+    height: 100vh;
     min-height: 650px;
     display: flex;
-    margin-bottom: -160px;
+    margin-bottom: -110px;
 }
 
 main h1 {
@@ -164,7 +164,7 @@ main h1 {
 }
 
 .content {
-    margin: 50px 25px;
+    margin: auto 25px;
     width: 60%;
     z-index: 5;
 }
@@ -172,6 +172,7 @@ main h1 {
 /* Title */
 
 .title {
+    margin-top: -50px;
     margin-bottom: 30px ;
 }
 
@@ -258,14 +259,14 @@ main h1 {
 }
 
 .image {
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 
 .image img {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-50%);
     z-index: 1;
 }
 
