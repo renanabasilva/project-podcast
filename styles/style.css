@@ -31,7 +31,7 @@
 }
 
 body, html {
-    background-color: #FFF1F1;    
+    background-color: var(--color4);    
 }
 
 body {
@@ -156,7 +156,7 @@ main {
     height: 80vh;
     min-height: 650px;
     display: flex;
-    margin-bottom: -130px;
+    margin-bottom: -160px;
 }
 
 main h1 {
@@ -178,6 +178,7 @@ main h1 {
 .title h2 {
     color: white;
     font-size: 2.8em;
+    /* font-size: 8vw; */
     font-family: var(--font1);
     letter-spacing: 0.1em; 
     text-shadow: 0 4px 4px rgba(185, 19, 19, 0.25);
@@ -223,6 +224,7 @@ main h1 {
     font-size: 1.1em;
     text-align: center;
     margin-top: 60px;
+    width: 90%;
 }
 
 /* buttons */
@@ -262,7 +264,8 @@ main h1 {
 .image img {
     position: absolute;
     left: 50%;
-    top: 40px;
+    top: 50%;
+    transform: translateY(-55%);
     z-index: 1;
 }
 
@@ -278,17 +281,20 @@ footer {
 
 footer > svg {
     display: block;
+    margin-top: -1px;
 }
 
 /* Social Media */
 
-.footer{
-    margin-top: -25px;
+.footer {
+    position: relative;    
+    z-index: 99;  
 }
 
 #social > li {
     display: inline-block;
-    margin: 0 8px;    
+    margin: 0 8px;  
+    
 }
 
 #social > li img {    

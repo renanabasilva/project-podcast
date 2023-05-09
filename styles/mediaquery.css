@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+/* Typical Device Breakpoints 
+-------------------------------------------------
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header {
+        position: fixed;
+        height: 55px;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .material-symbols-rounded {
+        display: none;
+    }
+
+    #menu {
+        position: auto;
+        top: 0;
+        /* background-color: var(--color2); */
+    }
+
+    #menu ul {
+        padding: 10px;
+        background-image: none;      
+    }
+
+    #menu ul li {
+        display: inline;
+        margin: 10px 5vw;
+    }
+
+    #menu a{
+        font-size: 1.5em;
+    }
+
+    #menu svg {
+        display: none;
+    }
+
+    main {
+        margin-top: 55px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .title {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .title h2 {        
+        font-size: max(min(8vw, 8em), 2.8em);
+    }
+
+    .title #ess {
+        padding-left: 8vw;
+    }
+
+    .line { 
+        width: 60vw;
+        max-width: 600px;
+    }
+
+    .content p {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .button {
+        margin-left: 11vw;
+    }
+    
+    .image img {
+        left: 60%;
+        width: 35%;
+        /* margin-top: 50px; */
+    }
+
+    footer > svg {
+        
+    }
+
+    .footer {
+        width: fit-content;
+        margin-top: -100px;
+        margin-left: 5vw;
+        text-align: center;
+    }
+}
