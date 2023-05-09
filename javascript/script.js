@@ -27,3 +27,7 @@ const menu = document.getElementById('menu')
 function clickMenu() {
     menu.classList.toggle('open');
 }
+
+// function exitMenu() {
+//     menu.style.top = '-100%'
+// }

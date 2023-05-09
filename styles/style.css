@@ -43,8 +43,7 @@ body {
 
 header {
     background-color: var(--color2);
-    padding: 10px 20px;
-    
+    padding: 10px 20px;    
 }
 
 /* menu */
@@ -59,21 +58,54 @@ header {
     cursor: pointer;
 }
 
+#burger {
+    height: 65px;
+    transition: all 0.3s ease-out;
+}
+
+#burger:hover {
+    font-size: 3.5em;
+    transition: all 0.3s ease-out;
+}
+
 #closemenu { 
     position: absolute;
     z-index: 10;
     left: 0;
-    margin: 13px 20px;  
+    margin: 13px 20px;
+    animation: girar2 0.3s linear;  
+}
+
+#closemenu:hover { 
+    animation: girar1 0.3s linear;
+}
+
+@keyframes girar1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+}
+
+@keyframes girar2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
 }
 
 #menu {
     position: fixed;
-    top: -100%;
+    top: -200%;
     left: 0;
     width: 100%;
     text-align: center; 
     z-index: 9;
-    transition: top 0.5s ease-in-out;    
+    transition: top 0.7s ease-in-out;    
 }
 
 #menu.open {
@@ -95,10 +127,26 @@ header {
     color: var(--color0);
     text-decoration: none;
     font-size: 2em;  
+    display: inline-block;
+    position: relative;
 }
 
-#menu a:hover {
-    text-decoration: underline;
+.underline_menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.underline_menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* --- body --- */
@@ -172,7 +220,7 @@ main h1 {
 
 .content p {
     color: var(--color0);
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     margin-top: 60px;
 }
@@ -187,12 +235,24 @@ main h1 {
     height: 50px;
     width: 120%;
     max-width: 300px;
+    font-size: 1.1em;
     text-decoration: none;
     color: var(--color4);
     background-color: var(--color1);
     border: 2px solid var(--color4);
     border-radius: 50px;
     box-shadow: 1px 3px 4px rgba(185, 19, 19, 0.2);
+    transition: all 0.2s ease-in-out;   
+}
+
+.button:hover {
+    /* border: none; */
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color1);
+    background-color: var(--color4);
+    transition: all 0.2s ease-in-out;   
 }
 
 .image {
