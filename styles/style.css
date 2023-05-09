@@ -37,12 +37,14 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    /* min-height: 10vh; */
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 header {
     background-color: var(--color2);
     padding: 10px 20px;
+    
 }
 
 /* menu */
@@ -98,18 +100,16 @@ nav {
     text-decoration: underline;
 }
 
-#menu svg {
-    
-}
-
 /* --- body --- */
 
 main {
     background-image: linear-gradient(var(--color1), var(--color2));
-    flex: 1;
+    /* flex: 1; */
+    height: 80vh;
+    min-height: 650px;
     display: flex;
     /* flex-direction: column; */
-    margin-bottom: -70px;
+    margin-bottom: -130px;
 }
 
 main h1 {
@@ -126,7 +126,6 @@ main h1 {
 
 .title {
     margin-bottom: 30px ;
-    padding-left: 20px;
 }
 
 .title h2 {
@@ -154,7 +153,8 @@ main h1 {
     position: absolute;
     left: 0;
     margin: -10px auto;
-    width: 63%; /* % do tamanho da tela */
+    width: 56vw; /* % do tamanho da tela */
+    max-width: 330px;
 }
   
 .line::before {
@@ -186,7 +186,8 @@ main h1 {
     justify-content: center;
     margin: 40px auto;
     height: 50px;
-    width: 220px;
+    width: 120%;
+    max-width: 300px;
     text-decoration: none;
     color: var(--color4);
     background-color: var(--color1);
@@ -195,25 +196,19 @@ main h1 {
     box-shadow: 1px 3px 4px rgba(185, 19, 19, 0.2);
 }
 
-.image {
-    width: 40vw;
-    overflow: hidden;
-}
-
 .image img {
-    /* position: absolute;
-    right: -200px;
-    top: -10px; */
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    z-index: 1;
 }
-
-
 
 /* --- footer --- */
 
 footer {
     text-align: center;
     background-color: var(--color3);
+    margin-top: auto;
 }
 
 /* Wave */
@@ -225,12 +220,12 @@ footer > svg {
 /* Social Media */
 
 .footer{
-    margin: -20px 0;
+    margin-top: -25px;
 }
 
 #social > li {
     display: inline-block;
-    margin: 0 8px;       
+    margin: 0 8px;    
 }
 
 #social > li img {    
