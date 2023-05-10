@@ -153,10 +153,11 @@ header {
 
 main {
     background-image: linear-gradient(var(--color1), var(--color2));
-    height: 100vh;
-    min-height: 650px;
+    height: 90%;
+    /* min-height: 660px; */
     display: flex;
-    margin-bottom: -110px;
+    flex-direction: column;
+    /* margin-bottom: -110px; */
 }
 
 main h1 {
@@ -172,8 +173,8 @@ main h1 {
 /* Title */
 
 .title {
-    margin-top: -50px;
-    margin-bottom: 30px ;
+    /* margin-top: -50px;
+    margin-bottom: 30px ; */
 }
 
 .title h2, .title h3 {
@@ -201,7 +202,7 @@ main h1 {
     background-color: var(--color4);
     position: absolute;
     left: 0;
-    margin: -10px auto;
+    margin: 20px auto;
     width: 56vw; /* % do tamanho da tela */
     max-width: 330px;
 }
@@ -249,8 +250,7 @@ main h1 {
 }
 
 .button:hover {
-    /* border: none; */
-    
+    /* border: none; */    
     font-size: 1.2em;
     font-weight: bold;
     color: var(--color1);
@@ -264,6 +264,7 @@ main h1 {
 
 .image img {
     position: absolute;
+    width: 50vw;
     left: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -275,7 +276,6 @@ main h1 {
 footer {
     text-align: center;
     background-color: var(--color3);
-    margin-top: auto;
 }
 
 /* Wave */
@@ -288,14 +288,14 @@ footer > svg {
 /* Social Media */
 
 .footer {
-    position: relative;    
-    z-index: 99;  
+    /* position: relative;     */
+    /* z-index: 99;   */
+    padding-top: 20px;
 }
 
 #social > li {
     display: inline-block;
     margin: 0 8px;  
-    
 }
 
 #social > li img {    
@@ -326,11 +326,98 @@ footer > svg {
 
 /* Title */
 
-.title {
-    margin-top: -50px;
-    margin-bottom: 30px ;
+.pages {
+    background-image: var(--color3);    
+    /* margin-bottom: 20px; */
+}
+
+.content.pages {
+    width: 100%;
+    margin-top: 50px;
+    margin: 40px 20px;
 }
 
 .title h3 {
     font-weight: 500;
+    color: var(--color0);
+}
+
+.line.pages {
+    background-color: var(--color0);
+    width: 70vw;
+    max-width: none;
+}
+
+.line.pages::before {
+    background-color: var(--color0);
+}
+
+.content.pages p{
+    text-align: justify;
+}
+
+.quote {
+    /* position: relative; */
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--color1);
+    color: var(--color0);
+    height: fit-content;
+    min-height: 150px;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+
+.quote embed{
+    width: 35px;
+    color: #fd4a32;
+    margin: 40px 20px;
+    align-self: flex-start;
+}
+
+.quote p {
+    font-family: var(--font1);
+    width: 40%;
+    text-align: justify;
+}
+
+.quote strong {
+    color: #fd4a32;
+}
+
+/* -- guidance -- */
+
+.quote.center {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.quote.center p {
+    width: 100%;
+    text-align: center;
+}
+
+.quote.center .button {
+    margin: 10px auto;
+    width: 40vw;
+}
+
+form {
+    margin-top: -30px;
+    padding: 20px;
+    width: 100%;
+}
+
+form input, form textarea {
+    margin: 8px auto;
+    padding: 8px;
+    width: 100%;
+    font-size: 1em;
+    background-color: var(--color2);
+    border: none;
+    resize: none;
+    box-shadow: 1px 4px 5px rgba(185, 19, 19, 0.3);
 }

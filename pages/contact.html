@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link rel="stylesheet" href="../styles/style.css" media="all">
     <link rel="stylesheet" href="../styles/mediaquery.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -32,29 +32,30 @@
             </svg>
         </nav>       
     </header>
-    <main>
+    <main class="pages">
         <h1>Contact</h1>
-        <div class="content">
+        <div class="content pages">
             <div class="title">
                 <h3 class="pagetitle">Contact me</h3>
             </div>
-            <div class="line"></div>
+            <div class="line pages"></div>
             <p>I'm excited to hear from you and embark on this journey together! </p>
         </div>
-        <div class="image">
+        <!-- <div class="image">
             <img src="../images/portrait.png" alt="mulhercafe">
-        </div>
+        </div> -->
         <form action="form.php" method="get" autocomplete="on">
-            <p><input type="text" name="name" id="iname" required minlength="3" maxlength="40" size="10" placeholder="*Name"></p>
+            <p><input type="text" name="name" id="iname" required minlength="3" maxlength="50" size="10" placeholder="*Name"></p>
 
             <p><input type="email" name="email" id="iemail" required autocomplete="email" placeholder="*E-mail"></p>
 
-            <p><textarea name="msg" id="imsg" cols="30" rows="5" maxlength="1000" placeholder="Message" style="resize: none"></textarea></p>
+            <p><textarea name="msg" id="imsg" cols="30" rows="5" maxlength="1000" placeholder="Message"></textarea></p>
 
             <p class="buttons"><input type="submit" value="Send" class="button"></p>
         </form>
-        <div class="quote">
-            <p>Let's empower each other and make a positive impact. I'm here to support and inspire you on your path to success!</p>
+        <div class="quote justify">
+            <embed src="../images/icons/quotation-mark-icon.svg">
+            <p>Let's empower each other and make a positive impact. I'm here to support and inspire you on your path to <strong>success</strong>!</p>
         </div>
     </main>
     <footer>
