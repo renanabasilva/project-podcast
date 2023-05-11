@@ -61,6 +61,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     #menu {
         position: auto;
         top: 0;
+        transition: none;  
     }
 
     #menu ul {
@@ -152,6 +153,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     #menu {
         position: auto;
         top: 0;
+        transition: none;    
     }
 
     #menu ul {
