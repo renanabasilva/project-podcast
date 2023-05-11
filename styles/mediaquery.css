@@ -236,13 +236,19 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin-top: 0px;
     }
 
+    /* Formulário */
+
+    form {
+        margin: 0px 10vw;
+        margin-top: 30px;
+    }
+
     /* Fluxograma */
 
     .flux {
         flex-direction: row;        
         align-items: center;
         margin: 0px auto;
-        margin-bottom: 40px;
     }
 
     .box {
