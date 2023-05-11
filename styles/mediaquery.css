@@ -20,7 +20,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 */
 
 /* Portrait */
-@media screen and (orientation: landscape) and (max-height: 400px) {            
+/* @media screen and (orientation: landscape) and (max-height: 400px) {            
 
     .image img {
         top: 80%;
@@ -42,7 +42,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     main {
         min-height: 600px;
     }
-}
+} */
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -70,7 +70,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
     #menu ul li {
         display: inline;
-        margin: 10px 5vw;
+        margin: 10px 4vw;
     }
 
     #menu a{
@@ -82,7 +82,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     main {
-        height: 100vh;
+        /* height: 100vh; */
         margin-top: 55px;
     }
 
@@ -128,6 +128,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin-top: -100px;
         margin-left: 5vw;
         text-align: center;
+    }
+
+    .pages .footer {
+        margin-top: 0px;
     }
 }
 
@@ -226,5 +230,26 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin-left: 10vw;
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    .pages .footer {
+        margin-top: 0px;
+    }
+
+    /* Fluxograma */
+
+    .flux {
+        flex-direction: row;        
+        align-items: center;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        margin: 20px;
+    }
+
+    .arrow {
+        transform: rotate(0deg);
     }
 }

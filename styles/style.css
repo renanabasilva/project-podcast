@@ -35,15 +35,19 @@ body, html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* define três linhas - cabeçalho, corpo e rodapé */
+    min-height: 100vh; /* define a altura mínima do corpo da página como a altura total da viewport */
     overflow-x: hidden;
     height: 100vh;
 }
 
 header {
     background-color: var(--color2);
-    padding: 10px 20px;    
+    padding: 10px 20px; 
+    grid-row: 1 / 2; /* define o cabeçalho para ocupar a primeira linha */   
 }
 
 /* menu */
@@ -100,7 +104,7 @@ header {
 
 #menu {
     position: fixed;
-    top: -200%;
+    top: -300%;
     left: 0;
     width: 100%;
     text-align: center; 
@@ -153,11 +157,12 @@ header {
 
 main {
     background-image: linear-gradient(var(--color1), var(--color2));
-    height: 90%;
+    /* height: 100%; */
     /* min-height: 660px; */
     display: flex;
     flex-direction: column;
     /* margin-bottom: -110px; */
+    grid-row: 2 / 3; /* define o corpo da página para ocupar a segunda linha */
 }
 
 main h1 {
@@ -276,6 +281,7 @@ main h1 {
 footer {
     text-align: center;
     background-color: var(--color3);
+    grid-row: 3 / 4; /* define o rodapé para ocupar a terceira linha */
 }
 
 /* Wave */
@@ -360,7 +366,7 @@ footer > svg {
     /* position: relative; */
     display: flex;
     /* flex-direction: column; */
-    background-color: var(--color1);
+    background-color: var(--color2);
     color: var(--color0);
     height: fit-content;
     min-height: 150px;
@@ -380,18 +386,19 @@ footer > svg {
 .quote p {
     font-family: var(--font1);
     width: 40%;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .quote strong {
     color: #fd4a32;
+    line-height: 1em;
 }
 
-/* -- guidance -- */
+/* -- guidance & Podcast -- */
 
 .quote.center {
     flex-direction: column;
-    padding: 20px;
+    padding: 50px;
     justify-content: center;
 }
 
@@ -401,14 +408,18 @@ footer > svg {
 }
 
 .quote.center .button {
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 30px;
     width: 40vw;
 }
+
+/* Formulário */
 
 form {
     margin-top: -30px;
     padding: 20px;
     width: 100%;
+    max-width: 600px;
 }
 
 form input, form textarea {
@@ -421,3 +432,44 @@ form input, form textarea {
     resize: none;
     box-shadow: 1px 4px 5px rgba(185, 19, 19, 0.3);
 }
+
+::placeholder {
+    color: var(--color0);
+    font-weight: 600;
+}
+
+/* Fluxograma */
+
+.flux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: var(--color0);
+    background-color: var(--color2);
+    border: 2px solid var(--color4);
+    border-radius: 50px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.arrow {
+    display: flex;
+    width: 0;
+    height: 0;
+    margin: 10px auto;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--color0);
+    transform: rotate(90deg);
+  }
