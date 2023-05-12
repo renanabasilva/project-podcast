@@ -20,31 +20,15 @@ Extra large devices (large laptops and desktops, 1200px and up)
 */
 
 /* Portrait */
-/* @media screen and (orientation: landscape) and (max-height: 400px) {            
+@media screen and (orientation: landscape) and (max-height: 400px) {            
 
     .image img {
         top: 80%;
         transform: translateY(-50%);
     }
-
-    main {
-        min-height: 600px;
-    }
 }
 
-@media screen and (orientation: landscape) and (min-height: 400px) and (max-height: 800px){            
-
-    .image img {
-        top: 45%;
-        transform: translateY(-50%);
-    }
-
-    main {
-        min-height: 600px;
-    }
-} */
-
-/* Tablets */
+/* Medium Devices */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     header {
@@ -83,7 +67,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     main {
-        /* height: 100vh; */
         margin-top: 55px;
     }
 
@@ -136,7 +119,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 }
 
-/* Dispositivos Grandes */
+/* Large and Extra Large Devices */
 @media screen and (min-width: 992px) {
 
     header {
@@ -225,7 +208,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
         transform: translateY(-50%);
     }
 
-
     .footer {
         width: fit-content;
         margin-top: -120px;
@@ -234,18 +216,48 @@ Extra large devices (large laptops and desktops, 1200px and up)
         text-align: center;
     }
 
+    /* ---- Pages Media Queries ---- */
+
+    .content.pages {
+        position: relative;
+    }
+
+    .content.pages.justify p{
+        margin: 0 5vw;
+        margin-top: 60px;
+        width: 50%;
+    }
+
+    .content.pages .imgpages img{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        width: 25%;
+        max-width: 350px;
+        object-fit: cover;
+        transform: translateY(-30%);
+        z-index: 1;
+    }
+
+    .quote.justify .imgpages img{
+        display: none;
+    }
+
     .pages .footer {
         margin-top: 0px;
     }
 
-    /* Formulário */
+    /* Form */
 
     form {
+        width: 50%;
         margin: 0px 10vw;
         margin-top: 30px;
+        align-self: flex-start;
     }
 
-    /* Fluxograma */
+    /* Flowchart */
 
     .flux {
         flex-direction: row;        

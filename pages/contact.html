@@ -34,28 +34,31 @@
     </header>
     <main class="pages">
         <h1>Contact</h1>
-        <div class="content pages">
+        <div class="content pages justify">
             <div class="title">
                 <h3 class="pagetitle">Contact me</h3>
             </div>
             <div class="line pages"></div>
-        </div>
-        <!-- <div class="image">
-            <img src="../images/portrait.png" alt="mulhercafe">
-        </div> -->
-        <form action="form.php" method="get" autocomplete="on">
-            <p>I'm excited to hear from you and embark on this journey together! </p>
-            <p><input type="text" name="name" id="iname" required minlength="3" maxlength="50" size="10" pattern="([aA-zZ]+)"placeholder="*Name"></p>
+            <form action="form.php" method="get" autocomplete="on">
+                <div>I'm excited to hear from you and embark on this journey together! </div>
+                <div><input type="text" name="name" id="iname" required minlength="3" maxlength="50" size="10" pattern="([aA-zZ]+)"placeholder="*Name"></div>
 
-            <p><input type="email" name="email" id="iemail" required autocomplete="email" placeholder="*E-mail"></p>
+                <div><input type="email" name="email" id="iemail" required autocomplete="email" placeholder="*E-mail"></div>
 
-            <p><textarea name="msg" id="imsg" cols="30" rows="4" maxlength="1000" placeholder="Message"></textarea></p>
+                <div><textarea name="msg" id="imsg" cols="30" rows="4" maxlength="1000" placeholder="Message"></textarea></div>
 
-            <p class="buttons"><input type="submit" value="Send" class="button"></p>
-        </form>
+                <div class="buttons"><input type="submit" value="Send" class="button"></div>
+            </form>
+            <div class="imgpages">
+                <img src="../images/portrait.png" alt="mulhercafe">
+            </div>
+        </div>  
         <div class="quote justify">
             <embed src="../images/icons/quotation-mark-icon.svg">
             <p>Let's empower each other and make a positive impact. I'm here to support and inspire you on your path to <strong>success</strong>!</p>
+            <div class="imgpages">
+                <img src="../images/portrait.png" alt="mulhercafe">
+            </div>
         </div>
     </main>
     <footer>
