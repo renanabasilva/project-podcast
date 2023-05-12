@@ -171,7 +171,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     .line { 
-        width: 60vw;
+        width: 58vw;
         max-width: none;
     }
 
@@ -194,9 +194,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
     .content .image img {
         width: 35%;
         min-width: 360px;
-        max-width: 550px;
+        max-width: 450px;
         /* margin-top: 50px; */
-        transform: translateY(-45%);
+        transform: translateY(-35%);
         overflow: hidden;
     }
 
@@ -231,7 +231,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
     .content.pages.justify p{
         margin: 0 auto;
         margin-top: 60px;
-        width: 50%;
     }
 
     .content.pages .imgpages img{
@@ -261,7 +260,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
     /* Form */
 
     form {
-        width: 50%;
         margin: 0px auto;
         margin-top: 30px;
         align-self: flex-start;
