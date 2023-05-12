@@ -70,10 +70,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin-top: 55px;
     }
 
-    .content {
-        width: 80%;
-    }
-
     .title {
         margin-top: 20px;
         margin-left: 20px;
@@ -93,18 +89,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     .content p {
-        text-align: left;
-        margin-left: 30px;
+        text-align: justify;
     }
 
     .button {
         margin-left: 11vw;
-    }
-    
-    .image img {
-        left: 60%;
-        width: 35%;
-        margin-top: 50px;
     }
 
     .footer {
@@ -112,6 +101,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin-top: -100px;
         margin-left: 5vw;
         text-align: center;
+    }
+
+    .line.pages {
+        max-width: 750px;
     }
 
     .pages .footer {
@@ -162,7 +155,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
 
     .content {
-        width: 60%;
         text-align: center;
     }
 
@@ -183,7 +175,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
         max-width: none;
     }
 
-    .content p {
+    .maincontent p {
         margin: 0px auto;
         margin-top: 60px;
     }
@@ -199,13 +191,13 @@ Extra large devices (large laptops and desktops, 1200px and up)
         max-width: 350px;
     }
     
-    .image img {
-        left: 60%;
-        width: 30%;
-        max-width: 400px;
-        margin-top: 50px;
-        top: 45%;
-        transform: translateY(-50%);
+    .content .image img {
+        width: 35%;
+        min-width: 360px;
+        max-width: 550px;
+        /* margin-top: 50px; */
+        transform: translateY(-45%);
+        overflow: hidden;
     }
 
     .footer {
@@ -222,8 +214,22 @@ Extra large devices (large laptops and desktops, 1200px and up)
         position: relative;
     }
 
-    .content.pages.justify p{
+    .content.pages p {
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .content.pages.justify .title {
         margin: 0 5vw;
+        width: 50%;
+    }
+
+    .pages .text {
+        width: 60%;
+    }
+
+    .content.pages.justify p{
+        margin: 0 auto;
         margin-top: 60px;
         width: 50%;
     }
@@ -244,6 +250,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
         display: none;
     }
 
+    .line.pages {
+        max-width: 60%;
+    }
+
     .pages .footer {
         margin-top: 0px;
     }
@@ -252,7 +262,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
     form {
         width: 50%;
-        margin: 0px 10vw;
+        margin: 0px auto;
         margin-top: 30px;
         align-self: flex-start;
     }

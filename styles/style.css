@@ -173,10 +173,11 @@ main h1 {
 }
 
 .content {
+    position: relative;
     margin: auto 25px;
     padding-top: 50px;
-    width: 60%;
-    z-index: 5;
+    /* width: 60%; */
+    /* z-index: 5; */
 }
 
 /* Title */
@@ -229,7 +230,7 @@ main h1 {
     font-size: 1.1em;
     text-align: center;
     margin-top: 60px;
-    width: 90%;
+    /* width: 90%; */
 }
 
 /* buttons */
@@ -260,9 +261,28 @@ main h1 {
     transition: all 0.2s ease-in-out;   
 }
 
-/* imagem */
+/* image */
 
-.image {
+.content .image img{
+    position: absolute;
+    top: 50%;
+    /* right: -10%; */
+    left: 55%;
+    width: 50%;
+    min-width: 200px;
+    max-width: 360px;
+    object-fit: cover;
+    transform: translateY(-45%);
+    z-index: 1;
+}
+
+.maincontent {
+    position: relative;
+    width: 60%;
+    z-index: 2;
+}
+
+/* .image {
     overflow-x: hidden;    
 }
 
@@ -275,7 +295,7 @@ main h1 {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-}
+} */
 
 /* --- footer --- */
 
@@ -340,6 +360,7 @@ footer > svg {
 .content.pages {
     width: 100%;
     margin: 0px 0px;
+    text-align: center;
 }
 
 /* Title */
@@ -354,8 +375,8 @@ footer > svg {
 
 .line.pages {
     background-color: var(--color0);
-    width: 70vw;
-    max-width: none;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .line.pages::before {
@@ -368,6 +389,7 @@ footer > svg {
     text-align: justify;
     max-width: 1000px;
     padding: 20px;
+    /* margin: 0 auto; */
 }
 
 /* quote */
